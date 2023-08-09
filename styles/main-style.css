@@ -1,0 +1,234 @@
+/* Igor Stefaniak */
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --error: #dc3545;
+    --accent: #d2b488;
+    --swiper-theme-color:#0d3624;
+    --swiper-navigation-color:#fff;
+}
+
+body {
+    margin: 0;
+}
+
+/* @media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #FFF;
+        --text-color: #000;
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000;
+        --text-color: #FFF;
+    }
+} */
+
+* {
+    font-family: 'Montserrat', 'Outfit', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+._vanish {
+    visibility: hidden;
+    opacity: 0;
+}
+
+background {
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+background img {
+    filter: brightness(0.5);
+    object-fit: cover;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+}
+
+.swiper-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-container .text {
+    color: #fff;
+    position: absolute;
+    font-size: 56px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .06em;
+    line-height: 1;
+    text-shadow: 0.7px 0.7px 1px rgba(0,0,0,.25);
+    text-transform: uppercase;
+    animation-delay: 0.5s;
+}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: absolute;
+    left: 0;
+    top: unset;
+    bottom: 0px;
+    z-index: 50;
+    height: 5px;
+    width: 100%; 
+
+}
+
+#container {
+    margin: 0px auto;
+    height: 100%;
+    display: none;
+}
+
+/* --- navbar --- */
+
+.top-navbar {
+    position: fixed;
+    height: 60px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: ease-in-out 0.3s;
+}
+
+.items-navbar {
+    align-items: center;
+    display: flex;
+}
+
+.top-navbar a {
+    font-size: 1.1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    transition: all 400ms;
+    margin: 0 15px 0 15px;
+}
+
+.nav-link-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.top-navbar .right-navbar .bx {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.top-navbar .right-navbar a:hover {
+    color: #e0e0e0;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.top-navbar .right-navbar a:before,
+.top-navbar .right-navbar a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 2px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.top-navbar .right-navbar a:before {
+    left: 0;
+}
+
+.top-navbar .right-navbar a:after {
+    right: 0;
+    background: var(--accent);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.top-navbar .right-navbar a:hover:before {
+    background: var(--accent);
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.top-navbar .right-navbar a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+#pros-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0d3624;
+}
+
+#pros-bar .bx{
+    line-height: 1;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+#pros-bar .pros-el:hover{
+    transform: scale(1.1);
+}
+
+#pros-bar .pros-el-hover{
+    transition: cubic-bezier(1, 0, 0, 1) 10ms;
+}
+
+
+#pros-bar .pros-el{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 40px;
+    font-size: 20px;
+    letter-spacing: .02em;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__item {
+    overflow: hidden;
+    border-radius: 12px;
+}

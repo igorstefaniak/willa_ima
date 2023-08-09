@@ -1,0 +1,227 @@
+@media only screen and (max-width:359px) {
+:root{
+  --gutter: 10px!important;
+}
+  
+  .top-navbar {
+    flex-direction: column;
+    top: 10px;
+    height: unset;
+  }
+
+  .top-navbar a {
+    flex-direction: column;
+    margin: 0;
+    width: inherit;
+  }
+  .right-navbar{
+    width: -webkit-fill-available;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+}
+  .top-navbar .nav-link-text {
+    display: none;
+  }
+  .top-navbar i {
+    margin-right: unset!important;
+  }
+  .swiper-container .text{font-size: 24px;}
+
+  .top-navbar a .nav-link-text
+  {
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+  }
+  .top-navbar .right-navbar a:before,
+  .top-navbar .right-navbar a:after {height: 0;}
+  .swiper-button-next, .swiper-button-prev{
+    display: none;
+  }
+
+  #pros-bar{flex-direction: column;}
+  #pros-bar .pros-el{font-size: 12px;
+    margin: 20px 5px;
+    }
+    #pros-bar .bx{font-size: 20px;}
+    #info{
+      flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width:575px) and (min-width:360px) {
+  :root{
+    --gutter: 10px!important;
+  }
+  .top-navbar {
+    flex-direction: column;
+    top: 0px;
+    height: unset;
+  }
+  .top-navbar a {
+    flex-direction: column;
+    margin: 0;
+    width: inherit;
+  }
+  .right-navbar{
+      width: -webkit-fill-available;
+      justify-content: space-evenly;
+      width: -webkit-fill-available;
+      width: -moz-available;
+      width: fill-available;
+  }
+  .top-navbar .nav-link-text {
+    display: none;
+  }
+  .top-navbar i {
+    margin-right: unset!important;
+  }
+  .swiper-container .text{font-size: 24px;}
+
+  .top-navbar a .nav-link-text
+  {
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .top-navbar .right-navbar a:before,
+  .top-navbar .right-navbar a:after {height: 0;}
+  .swiper-button-next, .swiper-button-prev{
+    display: none;
+  }
+
+  #pros-bar{flex-direction: column;}
+  #pros-bar .pros-el{font-size: 12px;
+    margin: 20px 5px;
+    }
+    #pros-bar .bx{font-size: 20px;}
+    #info{
+      flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width:899px) and (min-width:576px) {
+  .top-navbar {
+    flex-direction: column;
+    top: 0px;
+    height: unset;
+  }
+  .top-navbar a {
+    flex-direction: column;
+    margin: 0;
+    width: inherit;
+  }
+  .right-navbar{
+      width: -webkit-fill-available;
+      justify-content: space-evenly;
+      width: -webkit-fill-available;
+      width: -moz-available;
+      width: fill-available;
+  }
+  .top-navbar .nav-link-text {
+    display: none;
+  }
+
+  .top-navbar i {
+    margin-right: unset!important;
+  }
+
+  .swiper-container .text{font-size: 24px;}
+  .top-navbar a .nav-link-text
+  {
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .top-navbar .right-navbar a:before,
+.top-navbar .right-navbar a:after {height: 0;}
+
+#pros-bar .pros-el{font-size: 15px;
+margin: 30px 10px;}
+
+#info{
+  flex-direction: column-reverse;
+}
+
+
+}
+
+@media only screen and (max-width:1249px) and (min-width:900px) {
+  .top-navbar {
+    flex-direction: column;
+    top: 10px;
+    height: unset;
+  }
+  .top-navbar a {
+    flex-direction: column;
+    margin: 0;
+    width: inherit;
+  }
+  .right-navbar{
+      width: -webkit-fill-available;
+      justify-content: space-evenly;
+      width: -webkit-fill-available;
+      width: -moz-available;
+      width: fill-available;
+  }
+  .top-navbar .nav-link-text {
+    display: none;
+  }
+  .top-navbar .nav-link-text {
+    display: none;
+  }
+  .top-navbar i {
+    margin-right: unset!important;
+  }
+
+  .top-navbar a .nav-link-text
+  {
+    font-size: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .swiper-container .text{font-size: 24px;}
+
+}
+
+@media only screen and (max-width:1649px) and (min-width:1250px) {}
+
+@media only screen and (min-width:1650px) {
+  .bx {
+    line-height: 0;
+  }
+}
+
+._menu-darker {
+  background-color: #111111;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #6c5c45;
+}
+
+::selection{
+  background-color: #0d3624;
+}
